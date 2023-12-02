@@ -10,3 +10,4 @@ abbr ta tmux attach -t
 abbr ls eza --all --icons
 abbr gs git status
 abbr gca "git add . && git commit -m"
+abbr rg "rg --hyperlink-format=kitty"
