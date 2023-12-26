@@ -8,3 +8,4 @@ api.nvim_create_user_command("W", ":w", {})
 
 keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
+keymap.set("n", "<leader>dm", "V$%d")
