@@ -12,16 +12,23 @@ set history=1000
 set showcmd
 set wildmenu
 set wildmode=list:longest
-set incsearch
+set wildignorecase
 set ignorecase
 set smartcase
+set incsearch
 set showmatch
 set hlsearch
 set termguicolors
+filetype plugin indent on
 
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-eunuch'
+Plug 'machakann/vim-highlightedyank'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'itchyny/lightline.vim'
 
@@ -31,6 +38,7 @@ colorscheme catppuccin_mocha
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
+let g:highlightedyank_highlight_duration = 300
 let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 set noshowmode
 
