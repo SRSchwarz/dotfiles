@@ -30,3 +30,4 @@ PS1="\e[0;32m\u\e[0m@\h \e[0;32m\w\e[0m> "
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 alias fmvn="flatpak-spawn --host mvn"
+alias v="vim"
