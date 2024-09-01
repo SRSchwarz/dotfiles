@@ -19,6 +19,8 @@ set incsearch
 set showmatch
 set hlsearch
 set termguicolors
+set completeopt=menuone,longest
+set shortmess+=c
 filetype plugin indent on
 
 call plug#begin()
@@ -29,6 +31,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-scripts/AutoComplPop'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'itchyny/lightline.vim'
 
